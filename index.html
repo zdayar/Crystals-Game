@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Crystals Collector</title>
+
+    <!-- Including jquery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Lemonada" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="container">
+    <!-- Main Content -->
+    <div class="row">
+        <!-- Only one column -->
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+            <!-- Header and info and play button -->
+            <div class="jumbotron">
+                <h1>Crystals Collector</h1>
+                <p>Match the target number by collecting crystals!
+                    If you go above the target number, you lose.</p>
+                <p id="play-message"></p>
+
+                <!-- div for wins and losses -->
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div>Wins: <span id="wins"></span></div>
+                        <div>Losses: <span id="losses"></span></div>
+                    </div>
+                </div>
+
+                <p><a id="play-button" class="btn btn-primary" role="button">Play again!</a></p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Two columns -->
+        <div class="col-md-4 col-md-offset-2 col-sm-5 col-sm-offset-1 col-xs-6 text-center">
+            <!-- div for current score -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Your score</h3>
+                </div>
+                <div id="your-score" class="panel-body"></div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-5 col-xs-6 text-center">
+            <!-- div for random target number -->
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Target</h3>
+                </div>
+                <div id="target-number" class="panel-body"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- One column -->
+        <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 col-xs-12 text-center">
+            <!-- crystal buttons -->
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="btn-group" role="group" aria-label="crystal buttons">
+                        <!-- blue -->
+                        <button type="button" id="crystal0" class="btn btn-primary">
+                            <img src="assets/images/blue-crystal.png">
+                        </button>
+
+                        <!-- green -->
+                        <button type="button" id="crystal1" class="btn btn-success">
+                            <img src="assets/images/green-crystal.png">
+                        </button>
+
+                        <!-- yellow -->
+                        <button type="button" id="crystal2" class="btn btn-warning">
+                            <img src="assets/images/yellow-crystal.png">
+                        </button>
+
+                        <!-- red -->
+                        <button type="button" id="crystal3" class="btn btn-danger">
+                            <img src="assets/images/red-crystal.png">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- js for the game -->
+<script src="assets/javascript/game.js" type="text/javascript"></script>
+
+</body>
+</html>

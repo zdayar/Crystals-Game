@@ -1,0 +1,33 @@
+/* Common items */
+body {
+    font-family: 'Lemonada', cursive;
+    font-size: 14px;
+    background-image: url("../images/crystal_cave.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Make the jumbotron fonts smaller */
+.jumbotron {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.jumbotron h1 {
+    font-size: 32px;
+}
+
+.jumbotron p {
+    font-size: 16px;
+}
+
+#play-message {
+    color: red;
+}
+
+/* On phones, ensure crystal buttons don't wrap */
+@media (max-width: 402px) {
+    .btn {
+        padding: 6px;
+    }
+}
